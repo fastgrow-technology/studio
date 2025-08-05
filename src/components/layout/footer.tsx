@@ -108,7 +108,7 @@ export function Footer({ settings, services }: FooterProps) {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-8 flex flex-col justify-center items-center gap-2 text-center text-sm text-gray-400">
           <p>&copy; {currentYear} {settings['site_name'] || 'Insurance Plaza'}. All Rights Reserved.</p>
-          <p>Designed with <span className="text-primary">&#9829;</span> by Your Partner</p>
+          <p>Designed and Developed by DigiTech Spark</p>
         </div>
       </div>
     </footer>
