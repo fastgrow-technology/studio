@@ -94,8 +94,8 @@ export default async function Home() {
               className="w-full"
             >
               <CarouselContent>
-                {services.map((service, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+                {services.map((service) => (
+                  <CarouselItem key={service.slug} className="md:basis-1/2 lg:basis-1/4">
                      <div className="p-1 h-full">
                        <ServiceCard service={service} />
                      </div>
@@ -150,8 +150,8 @@ export default async function Home() {
               className="w-full"
             >
               <CarouselContent>
-                {testimonials.map((testimonial, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                {testimonials.map((testimonial) => (
+                  <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-4 h-full">
                       <Card className="p-8 h-full flex flex-col justify-between shadow-lg bg-gray-50 rounded-xl">
                         <div className="flex-grow">
